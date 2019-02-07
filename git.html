@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Condensed:400,700|Inconsolata">
+    <link href="style/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="git.html" class="active">Git</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Git Commit Message Style Guide</h1>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>There are many opinions on the "ideal" style in the world of development. Therefore, in order to reduce the confusion on what style should follow during the course of projects, all of projects should refer to this style guide.</p>
+        <p>开发中的“理想”风格有很多观点，为减少在项目过程中应遵循的风格的混淆，所有项目都遵循此风格指南。</p>
+    </section>
+
+    <section>
+        <h2>Commit Messages</h2>
+
+        <article>
+            <h3>Message Structure</h3>
+            <p>A commit messages consists of three distinct parts separated by a blank line: the title, an optional body and an optional footer. The layout looks like this:</p>
+            <p>提交消息由三部分组成，用空行分隔：标题，主体（可选）和页脚（可选），布局看起来像这样：</p>
+            <pre><code>type: subject
+
+body
+
+footer</code></pre>
+
+            <p>The title consists of the type of the message and subject.</p>
+            <p>标题由类型(type)和主题(subject)组成。</p>
+        </article>
+
+        <article>
+            <h3>The Type</h3>
+            <p>The type is contained within the title and can be one of these types:</p>
+            <p>类型包含在标题中，可以是以下类型之一：</p>
+
+            <ul>
+                <li><strong>feat:</strong> a new feature</li>
+                <li><strong>fix:</strong> a bug fix</li>
+                <li><strong>docs:</strong> changes to documentation</li>
+                <li><strong>style:</strong> formatting, missing semi colons, etc; no code change</li>
+                <li><strong>refactor:</strong> refactoring production code</li>
+                <li><strong>test:</strong> adding tests, refactoring test; no production code change</li>
+                <li><strong>chore:</strong> updating build tasks, package manager configs, etc; no production code
+                    change</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>The Subject</h3>
+            <p>Subjects should be no greater than 50 characters, should begin with a capital letter and do not end with
+                a period.</p>
+            <p>主语不应超过50个字符，应以大写字母开头，不以句号结尾。</p>
+
+            <p>Use an imperative tone to describe what a commit does, rather than what it did. For example, use
+                <strong>change</strong>; not changed or changes.</p>
+            <p>使用命令式语气来描述提交的作用，而不是它的作用。 例如，使用更改; 没有改变或改变。</p>
+        </article>
+
+        <article>
+            <h3>The Body</h3>
+            <p>Not all commits are complex enough to warrant a body, therefore it is optional and only used when a
+                commit requires a bit of explanation and context. Use the body to explain the <strong>what</strong> and
+                <strong>why</strong> of a commit, not the how.</p>
+            <p>并非所有提交都足够复杂以保证正文，因此它是可选的，仅在提交需要一些解释和上下文时使用。 使用正文来解释提交的内容和原因，而不是如何。</p>
+
+            <p>When writing a body, the blank line between the title and the body is required and you should limit the
+                length of each line to no more than 72 characters.</p>
+            <p>在编写正文时，标题和正文之间的空白行是必需的，您应该将每行的长度限制为不超过72个字符。</p>
+        </article>
+
+        <article>
+            <h3>The Footer</h3>
+            <p>The footer is optional and is used to reference issue tracker IDs.</p>
+            <p>页脚是可选的，用于引用问题跟踪器ID。</p>
+        </article>
+
+        <article>
+            <h3>Example Commit Message</h3>
+            <pre><code>feat: Summarize changes in around 50 characters or less
+
+More detailed explanatory text, if necessary. Wrap it to about 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like `log`, `shortlog`
+and `rebase` can get confused if you run the two together.
+
+Explain the problem that this commit is solving. Focus on why you
+are making this change as opposed to how (the code explains that).
+Are there side effects or other unintuitive consequenses of this
+change? Here's the place to explain them.
+
+Further paragraphs come after blank lines.
+
+ - Bullet points are okay, too
+
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between, but conventions
+   vary here
+
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789</code></pre>
+        </article>
+    </section>
+</body>
+
+</html>
